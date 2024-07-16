@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+.banner {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #000;
+}
+.content {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  text-align: center;
+  color: aqua
+}
+h1 {
+  font-size: 5em;
+  margin: 0 0 10px;
+}
+p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+blockquote {
+    font-size: 1.2em;
+    margin: 30px auto;
+    max-width: 700px;
+    font-style: italic; 
+}
+ cite{
+	margin: 10px 250px
+}
+.popular-tours {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: black;
+}
+.popular-tours h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: aqua;
+}
+.tours {
+  display: flex;
+  justify-content: center;
+}
+.tour {
+  width: 200px;
+  margin: 0 10px;position: relative;
+}
+.tour:hover {
+  transform: scale(0.9);
+  box-shadow: 0 10px 20px rgba(20, 20, 20, 0.3);
+}
+.tour img {
+  width: 100%;
+  height: 90%;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+.tour-chu{
+	 position: absolute;width: 50%;left: 25%; top:40%; transform: scale(0);transition: 1s; font-size: 30px
+}
+.tour:hover .tour-chu{
+	top: 40%; transform: scale(0.9)
+}
+.video {
+  position: relative;
+  width: 100%;
+}
+.opcity{
+	width: 100%; height: 100%; background-color: rgba(17,16,16,0.2); position: absolute;left: 0;top: 0
+}
+.caption {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 200%;
+  z-index: 1
+}
+header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 0;
+  border-bottom: 2px solid #1C1A1A
+}
+.logo {
+  padding-top: 5px;
+  width: 30px;
+}
+.img-100 {
+  height: 30px
+}
+.logo a {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFED4C;
+}
+.logo a:hover {
+  color: #DADADA
+}
+.menu ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  display: flex
+}
+.menu {
+  padding-top: 20px;
+}
+.menu ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #0B0A0A
+}
+.menu ul li a:hover {
+  background-color: rgba(175, 175, 175, 0.5);
+  color: #0B0B0B; border-radius: 50%; 
+}
+.icon{
+	 padding-top: 20px; 
+}
+.icon a {
+	color:#0B0A0A; 
+}
+.icon a:hover{	
+color: darkgray
+}
+
+footer {
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 0 20px;
+}
+footer ul li a img {
+  width: 20px;
+}
+.banner1{
+	width: 100%; min-height: 700px; position: relative; top: 0; left: 0;
+}
+.caption{
+	width: 30%; position: absolute; left: 10%; top:30%; text-align: start;}
+.caption h1{
+	font-size: 100px; color:#00FFFF; margin-bottom: -20px
+}
+.textar{
+	font-size: 50px; color: #00FFFF;
+}
+.link{
+	text-decoration: none; color: #00FFFF
+}
+.link:hover{
+	color: white
+}
+.banner2{
+	width: 100%; min-height: 600px; position: relative; top: 0; left: 0; 
+}
+
+.banner3{
+	width: 100%; min-height: 600px; position: relative; top: 0; left: 0;
+}
+.caption3{
+	width: 30%; position: absolute; left: 10%; top:30%; text-align: start;
+}
+.caption3 h1{
+	font-size: 100px; color:aqua; margin-bottom: -20px
+}
+.textar3{
+	font-size: 50px; color:aqua;
+}
+.link3{
+	text-decoration: none; color: aqua
+}
+.link3:hover{
+	color: white
+}
+/*NẰM TRONG FILE style-carousel của buổi 6 thầy gửi file để làm bài*/
+/*DỜI NÚT NAV SANG HAI BÊN TRAI PHẢI CỦA HÌNH - Nhớ đổi tên #id cho giống với id của banner*/
+#slider .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slider .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+}
+
+#slider .owl-nav .owl-next{ position:absolute; right:5%;}
+#slider .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slider .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#0B0000;
+      text-decoration: none; }
+/*DỜI NÚT DOTS LÊN TRÊN HÌNH LUÔN - Nhớ đổi tên #id cho giống với id của banner*/
+#slider .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slider .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px;
+}
+/*Đổi màu cho dots*/
+#slider .owl-dots .owl-dot span {
+      width: 20px;
+      height: 10px;
+      margin: 10px 30px;
+      background:#F4F4F4;/*Màu khi không chỉ vào - chọn banner đó*/
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slider .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #040404; } /*Màu khi chỉ vào - chọn banner đó*/
+.textna{
+	text-align: center; text-decoration: underline #00FFFF; margin-bottom: 40px; margin-top: 30px;color: aqua
+}
+.gach-chan{
+	border-bottom: 2px solid rgba(0,255,255,1.00); color: aqua
+}
+.vien{
+	border: 1.5px solid #00FFFF; padding: 20px; position: relative; overflow: hidden
+}
+.ttsp{
+	margin: 0; padding: 0; display: flex; justify-content: space-between; color: white
+}
+
+.iconreac{
+	width: 70%; height: 45px; position: absolute; left: 15%; top: 40%; display: flex; justify-content: space-between
+		; transform: scale(0); transition: all 1s
+}
+.iconreac a{
+	height: 45px; width: 45px; background-color: aqua; color: white; border-radius: 50%; display: flex; justify-content: center;
+	align-items: center; text-decoration: none; 
+}
+.vien:hover .iconreac{
+	top: 40%; transform: scale(0.7)
+	
+}
+.iconreac :hover{
+	transform: scale(2)
+}
+#feature{
+	width: 100%; min-height: 700px; background-image: url("../img/4.jpg"); background-repeat: no-repeat; background-size: cover
+		; background-position: bottom
+}
+.padt30{
+	padding-top: 40px
+}
+.vientrang{
+	width: 100%; border: 1px solid #050505; text-align: center; padding: 20px; color: aqua
+}
+.vientrang a{
+	text-decoration: none; color: aqua; cursor: pointer
+}
+.vientrang a:hover{
+	color: white
+}
+#contact{
+	width: 100%; min-height: 700px; background-image: url("../img/5.png"); background-repeat: no-repeat; background-size: cover
+		; background-position: center
+}
+.form-control{
+	padding: 8px; margin-bottom: 10px; width: 100%; background-color: white
+}
+.shadow{
+	border: 1px solid white; padding: 30px;box-shadow: 2px 2px 2px white 
+}
